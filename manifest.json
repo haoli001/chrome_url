@@ -1,0 +1,22 @@
+{
+        "manifest_version": 2,
+        "name": "信辉神，无bug",
+        "version": "0.1",
+        "description": "orz_orz_orz_orz",
+        "icons": {
+        },
+        "browser_action": {
+            "default_title": "url",
+            "default_popup": "popup.html"
+        },
+        "icons": { "16": "icon-16.png", "128": "icon-128.png" },
+        "permissions": [
+        "contextMenus",
+        "tabs"
+        ],
+        "background": { 
+            "scripts": ["menu.js"] 
+        }, 
+        "options_page": "options.html"
+
+}
