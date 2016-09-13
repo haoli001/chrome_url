@@ -53,7 +53,7 @@ if(firstid+1<=firsturllist.length){
   //Update the url here.
   chrome.tabs.update(tab.id, {url: myNewUrl});
   localStorage.firstid = firstid+1+"";
-  info(myNewUrl);
+ // info(myNewUrl);
 });
 }
 }
@@ -87,7 +87,7 @@ document.getElementById('sp').onclick = function(){
   //Update the url here.
   chrome.tabs.update(tab.id, {url: myNewUrl});
   localStorage.secondid = secondid-1+"";
-  info(myNewUrl);
+  //info(myNewUrl);
 });
 }
 
