@@ -93,7 +93,7 @@ document.getElementById('sp').onclick = function(){
 document.getElementById('option').onclick = function(){
   chrome.tabs.getSelected(function (tab) {
   //Your code below...
-  var myNewUrl = "chrome-extension://benajbfndikngjefdpmbnagaedbiddfh/options.html";
+  var myNewUrl = "chrome-extension://coejijnjmafbceeobcjfbmbaoffhfppf/options.html";
   //Update the url here.
   chrome.tabs.update(tab.id, {url: myNewUrl});
   //info(myNewUrl);
