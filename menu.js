@@ -6,7 +6,6 @@ function genericOnClick1(info, tab) {
 var firstid = new Number(localStorage.firstid);
 var secondid = new Number(localStorage.secondid);
 if(firstid+1<=firsturllist.length){
-    alert("123123");
   chrome.tabs.getSelected(function (tab) {
   //Your code below...
   var myNewUrl = firsturllist[firstid+1];
