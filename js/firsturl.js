@@ -1,3 +1,12 @@
+document.getElementById('option').onclick = function(){
+  chrome.tabs.getSelected(function (tab) {
+  //Your code below...
+  var myNewUrl = "chrome-extension://coejijnjmafbceeobcjfbmbaoffhfppf/options.html";
+  //Update the url here.
+  chrome.tabs.update(tab.id, {url: myNewUrl});
+  //info(myNewUrl);
+});
+}
 function info(firsturl){
     var firstid = -1;
     var secondid = -1;
@@ -87,15 +96,6 @@ document.getElementById('sp').onclick = function(){
   //Update the url here.
   chrome.tabs.update(tab.id, {url: myNewUrl});
   localStorage.secondid = secondid-1+"";
-  //info(myNewUrl);
-});
-}
-document.getElementById('option').onclick = function(){
-  chrome.tabs.getSelected(function (tab) {
-  //Your code below...
-  var myNewUrl = "chrome-extension://coejijnjmafbceeobcjfbmbaoffhfppf/options.html";
-  //Update the url here.
-  chrome.tabs.update(tab.id, {url: myNewUrl});
   //info(myNewUrl);
 });
 }
